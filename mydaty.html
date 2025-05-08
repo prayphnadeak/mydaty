@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>MyDaty | Bisnis dan Teknologi</title>
+
+	<!-- SEO Meta Tags -->
+	<meta name="description"
+		content="MyDaty adalah jasa konsultansi data dan teknologi, membantu analisis data, statistik, bisnis berbasis teknologi." />
+	<meta name="keywords"
+		content="konsultan data, analisis data, bisnis teknologi, statistik, data science, MyDaty, Pray Nadeak" />
+	<meta name="author" content="Pray Putra Hasianro Nadeak" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title" content="MyDaty | Konsultan Data dan Teknologi" />
+	<meta property="og:description"
+		content="Layanan konsultansi profesional dalam analisis data, statistik, dan bisnis berbasis teknologi." />
+	<meta property="og:image" content="https://prayphnadeak.github.io/mydaty/images/mydaty.png" />
+	<meta property="og:url" content="https://prayphnadeak.github.io/mydaty" />
+	<meta property="og:type" content="website" />
+
+	<!-- Link ke CSS -->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<!-- Style tambahan untuk header -->
+	<style>
+		#header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background: white;
+			z-index: 999;
+			padding: 10px;
+		}
+
+		#main {
+			margin-top: 60px;
+		}
+	</style>
+
+	<!-- SweetAlert2 -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+</head>
+
+<body class="is-preload">
+	<!-- Tambahkan ini di dalam <body>, di awal sebelum konten utama -->
+	<header class="navbar">
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/mydaty-bw.png" alt="Logo MyDaty" style="height:40px;">
+			</a>
+		</div>
+		<div class="menu-toggle" id="menu-toggle">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<ul id="navbar-menu" class="center-menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#one">Portfolio</a></li>
+			<li><a href="index.html#two">Testimony</a></li>
+			<li><a href="index.html#three">Contact Us</a></li>
+		</ul>
+	</header>
+
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<br>
+				<br>
+				<h2>Selayang Pandang MyDaty</h2>
+				<p>
+					<center><img src="images/mydaty.png" alt="MyDaty" class="responsive-logo"></center>
+				</p>
+				<p><strong>My Data and Technology (MyDaty)</strong> jasa konsultansi yang didirikan oleh Pray Putra
+					Hasianro Nadeak,
+					dengan komitmen menjadi penyedia solusi atas berbagai permasalahan data dan bisnis melalui
+					pemanfaatan
+					teknologi terkini. Sejalan dengan visinya, MyDaty hadir untuk mendukung pertumbuhan bisnis melalui
+					solusi inovatif dalam analisis data dan penerapan teknologi yang relevan. Layanan yang ditawarkan
+					mencakup konsultansi terintegrasi yang profesional dan disesuaikan dengan kebutuhan spesifik tiap
+					klien, baik individu, organisasi, maupun perusahaan. MyDaty juga berfokus pada pengembangan dan
+					penerapan teknologi modern untuk meningkatkan efisiensi operasional, akurasi pengambilan keputusan,
+					dan daya saing bisnis di era digital yang terus berkembang. Dengan pendekatan yang adaptif dan
+					berbasis hasil, MyDaty berkomitmen menjadi mitra strategis dalam perjalanan transformasi data dan
+					teknologi para klien.</p>
+				<br>
+				<strong>Visi MyDaty: </strong>
+				<br>
+				<em>Penyedia solusi permasalahan data dan bisnis dengan teknologi terkini</em>
+				<br>
+				<br>
+				<strong>Misi MyDaty: </strong>
+				<br>
+				<em>1. Menyediakan solusi inovatif dalam analisis data dan teknologi untuk mendukung pertumbuhan
+					bisnis.</em>
+				<br><em>2. Memberikan layanan konsultansi yang terintegrasi, profesional, dan berbasis kebutuhan
+					spesifik.</em>
+				<br><em>3. Mengembangkan penerapan teknologi terkini untuk meningkatkan efisiensi, akurasi, dan daya
+					saing bisnis. </em>
+				<br>
+				<br>
+				<br>
+				<h2>Tarif Layanan Konsultansi Statistika dan Sains Data</h2>
+				<br>
+				<div class="table-wrapper">
+					<table class="alt center-header">
+						<thead>
+							<tr>
+								<th>Layanan</th>
+								<th>Durasi</th>
+								<th>Deskripsi</th>
+								<th>Tarif (Rp)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Konsultasi Dasar Statistik</td>
+								<td>1 jam</td>
+								<td>Tanya jawab seputar konsep dasar statistik, pengujian hipotesis, dll.</td>
+								<td>150.000</td>
+							</tr>
+							<tr>
+								<td>Pendampingan Analisis Data</td>
+								<td>1 jam</td>
+								<td>Bantuan olah data menggunakan SPSS, R, Python, Excel, dll.</td>
+								<td>175.000</td>
+							</tr>
+							<tr>
+								<td>Review & Interpretasi Output</td>
+								<td>1 jam</td>
+								<td>Review output statistik, bantuan membuat interpretasi hasil analisis.</td>
+								<td>150.000</td>
+							</tr>
+							<tr>
+								<td>Paket Hemat (3x Sesi)</td>
+								<td>3 x 1 jam</td>
+								<td>Sesi intensif untuk bimbingan tugas akhir, publikasi, atau proyek data.</td>
+								<td>400.000 (hemat 50rb)</td>
+							</tr>
+							<tr>
+								<td>Express Session (urgent)</td>
+								<td>30 menit</td>
+								<td>Konsultasi cepat untuk pertanyaan mendesak atau revisi cepat.</td>
+								<td>100.000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<br>
+				<br>
+				<br>
+				<h2>Tarif Layanan Konsultansi Bisnis dan Teknologi</h2>
+				<br>
+				<div class="table-wrapper">
+					<table class="alt center-header">
+					  <thead>
+						<tr>
+						  <th>Layanan</th>
+						  <th>Durasi</th>
+						  <th>Deskripsi</th>
+						  <th>Tarif (Rp)</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>Konsultasi Strategi Bisnis</td>
+						  <td>1 jam</td>
+						  <td>Pembahasan strategi pengembangan usaha, model bisnis, dan validasi ide.</td>
+						  <td>200.000</td>
+						</tr>
+						<tr>
+						  <td>Digitalisasi Bisnis</td>
+						  <td>1 jam</td>
+						  <td>Pendampingan memilih & menerapkan solusi digital untuk UMKM/startup.</td>
+						  <td>225.000</td>
+						</tr>
+						<tr>
+						  <td>Review Proposal/Deck Bisnis</td>
+						  <td>1 jam</td>
+						  <td>Evaluasi dan masukan untuk proposal bisnis atau pitch deck investor.</td>
+						  <td>175.000</td>
+						</tr>
+						<tr>
+						  <td>Paket Transformasi Digital</td>
+						  <td>3 x 1 jam</td>
+						  <td>Sesi intensif membuat roadmap transformasi digital skala UMKM/startup.</td>
+						  <td>500.000 (hemat 100rb)</td>
+						</tr>
+						<tr>
+						  <td>Sesi Kilat Teknologi</td>
+						  <td>30 menit</td>
+						  <td>Konsultasi cepat seputar tools, integrasi sistem, atau troubleshooting teknis.</td>
+						  <td>125.000</td>
+						</tr>
+					  </tbody>
+					</table>
+				  </div>
+				  
+
+				<p>
+				<h3 style="color: rgb(0, 251, 255);">
+					<center>Software Pendukung Proses Konsultansi:</center>
+				</h3>
+				</p>
+				<div class="features4">
+
+					<section>
+						<a href="https://desktop.arcgis.com/en/arcmap/latest/get-started/installation-guide/installing-on-your-computer.htm"
+							target="_blank">
+							<img src="images/arcgis.PNG" alt="ArcGIS" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>ArcGIS</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.canva.com" target="_blank">
+							<img src="images/canva.PNG" alt="canva" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Canva</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.drawio.com/" target="_blank">
+							<img src="images/drawio.PNG" alt="tableau" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Draw.io</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.eviews.com/download/downloadfull.shtml" target="_blank">
+							<img src="images/eviews.PNG" alt="Eviews" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Eviews</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://lisrel.software.informer.com/" target="_blank">
+							<img src="images/lisrel.PNG" alt="Lisrel" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Lisrel</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.microsoft.com/en-us/microsoft-365/access" target="_blank">
+							<img src="images/access.PNG" alt="Access" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Microsoft Access</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank">
+							<img src="images/excel.PNG" alt="Excel" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Microsoft Excel</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint" target="_blank">
+							<img src="images/powerpoint.PNG" alt="powerpoint" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Microsoft Powerpoint</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.minitab.com/en-us/products/minitab/free-trial/?msclkid=1fdb3615624f103ab42a51ea3597f168"
+							target="_blank">
+							<img src="images/minitab.PNG" alt="Minitab" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Minitab</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://dev.mysql.com/downloads/installer/" target="_blank">
+							<img src="images/mysql.PNG" alt="Mysql" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>MySQL</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://apps.microsoft.com/detail/9ntxr16hnw1t?hl=en-us&gl=US" target="_blank">
+							<img src="images/powerbi.PNG" alt="powerbi" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>PowerBI</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.python.org/downloads/" target="_blank">
+							<img src="images/python.PNG" alt="python" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Python</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://qgis.org/download/" target="_blank">
+							<img src="images/qgis.PNG" alt="qgis" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>QGIS</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://rstudio-pubs-static.s3.amazonaws.com/1215682_b2ed746543234e2c961ea4b67b4da290.html"
+							target="_blank">
+							<img src="images/r.PNG" alt="r" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>R</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.ibm.com/support/pages/downloading-ibm-spss-statistics-25" target="_blank">
+							<img src="images/spss.PNG" alt="spss" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>SPSS</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.stata.com/install-guide/windows/download/" target="_blank">
+							<img src="images/stata.PNG" alt="stata" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Stata</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.tableau.com/products/desktop/download" target="_blank">
+							<img src="images/tableau.PNG" alt="tableau" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Tableau</center>
+						</h4>
+					</section>
+					<section>
+						<a href="https://www.visual-paradigm.com/" target="_blank">
+							<img src="images/visualparadigm.PNG" alt="tableau" width="100%" style="border: 0;">
+						</a>
+						<h4 style="color: yellow;">
+							<center>Visual Paradigm</center>
+						</h4>
+					</section>
+
+				</div>
+				<ul class="actions">
+					<li><a href="index.html" class="button">BACK</a></li>
+				</ul>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; 2025 MyDaty. All rights reserved.</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/pagination.js"></script>
+
+</body>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const toggle = document.getElementById('menu-toggle');
+		const menu = document.getElementById('navbar-menu');
+
+		toggle.addEventListener('click', function () {
+			menu.classList.toggle('active');
+		});
+	});
+</script>
+
+</html>
