@@ -46,6 +46,10 @@
 
   <!-- SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
+  <!-- Chart.js-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body class="is-preload">
@@ -79,7 +83,7 @@
         <h1>Selamat Datang di MyDaty</h1>
         <p><img src="images/mydaty.png" alt="Logo MyDaty - Konsultan Data dan Teknologi" class="responsive-logo"></p>
         <h2>Konsultan Data dan Teknologi</h2>
-        <p><strong>MyDaty Consultant</strong> hadir bagi Anda semua untuk membantu mengatasi masalah analisis data statistik dan perancangan bisnis berbasis teknologi.</p>
+        <p><strong>MyDaty Consultant</strong> hadir bagi Anda semua untuk membantu mengatasi masalah analisis data statistik dan perancangan bisnis berbasis teknologi informasi dengan harga yang terjangkau. Untuk informasi lebih jauh tentang MyDaty dan ragam produk konsultansinya, silakan klik "SELENGKAPNYA"</p>
         <ul class="actions">
           <li><a href="mydaty.html" class="button scrolly" title="Selengkapnya tentang MyDaty">Selengkapnya</a></li>
         </ul>
@@ -154,7 +158,7 @@
     <section id="three" class="wrapper style1 fade-up">
       <div class="inner">
         <h2>Contact Us</h2>
-        <p>Isi form di bawah ini untuk permohonan konsultansi, kritik, atau saran.</p>
+        <p>Isi form di bawah ini untuk permohonan konsultansi, kritik, atau saran. Jika ingin melihat kembali <em>pricelist</em> sebelum melakukan <em>order</em>, silakan klik <a href="mydaty.html"><strong>DI SINI.</strong></a></p>
         <div class="split style1">
           <section>
             <form method="POST" action="https://formspree.io/f/xpwddwya" id="contactForm">
@@ -174,9 +178,17 @@
                 <div class="field half">
                   <label for="consultation_type">Jenis Konsultansi</label>
                   <select name="consultation_type" id="consultation_type" required>
-                    <option value="">-- Pilih Jenis Konsultansi --</option>
-                    <option value="Statistika dan Sains Data">Statistika dan Sains Data</option>
-                    <option value="Bisnis dan Teknologi">Bisnis dan Teknologi</option>
+                    <option value="" >-- Pilih Jenis Konsultansi--</option>
+                    <option value="" disabled><strong>--STATISTIKA DAN SAINS DATA--</strong></option>
+                    <option value="MyDaty StatLite">MyDaty StatLite</option>
+                    <option value="MyDaty StatPro">MyDaty StatPro</option>
+                    <option value="MyDaty DeepStat">MyDaty DeepStat</option>
+                    <option value="" disabled><strong>--BISNIS DAN TEKNOLOGI--</strong></option>
+                    <option value="MyDaty BizPro">MyDaty BizPro</option>
+                    <option value="MyDaty BizStat">MyDaty BizStat</option>
+                    <option value="MyDaty DeepBiz">MyDaty DeepBiz</option>
+                    <option value="" disabled><strong>--LAINNYA--</strong></option>
+                    <option value="Informasi Paket">Informasi Paket</option>
                     <option value="Kritik dan Saran">Kritik dan Saran</option>
                   </select>
                 </div>
@@ -248,7 +260,7 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/hiddenbar.js" defer></script>
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/chart.js"></script>
 </body>
 <!-- Tambahkan ini di akhir <body> sebelum </html> -->
 <script src="assets/js/navbar.js"></script>
