@@ -4597,3 +4597,80 @@ body.menu-open {
   background-color: #0056b3;
 }
 
+
+/*========== sliding collage box==========*/
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.slider.features6 {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  scroll-snap-type: x mandatory;
+}
+
+.slider.features6 section {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.slider.features6 section:hover {
+  transform: translateY(-5px);
+}
+
+.slider.features6 img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.slider.features6 h3 {
+  font-size: 1.1rem;
+  color: yellow;
+}
+
+/* Tombol panah */
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  color: red;
+  cursor: pointer;
+  z-index: 1;
+  user-select: none;
+}
+
+.slide-btn.left {
+  left: 10px;
+}
+
+.slide-btn.right {
+  right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider.features6 section {
+    width: 80%;
+  }
+}
