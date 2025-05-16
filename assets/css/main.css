@@ -4674,3 +4674,39 @@ body.menu-open {
     width: 80%;
   }
 }
+
+/*=========== dropdown option button ===========*/
+
+/* Styling umum untuk dropdown */
+.custom-select {
+  background-color: #1a1a40; /* atau warna gelap sesuai tema kamu */
+  color: #fff;
+  border: 1px solid #444;
+  padding: 10px;
+}
+
+/* Hilangkan highlight putih default pada optgroup (sebisa mungkin) */
+.custom-select optgroup {
+  color: #ccc;
+  font-style: italic;
+  background-color: #1a1a40; /* samakan dengan warna dropdown */
+  pointer-events: none; /* agar tidak bisa diklik */
+}
+
+/* Styling opsi */
+.custom-select option {
+  background-color: #1a1a40;
+  color: #fff;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 4px;
+  display: none;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
