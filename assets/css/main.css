@@ -2734,7 +2734,7 @@ input[type="radio"] + label:before {
 }
 
 .wrapper.style3-alt .icon.major:before {
-  color: #953d75;
+  color: #40E0D0; /* turquoise */
 }
 
 /* Image */
@@ -3425,7 +3425,7 @@ table.center-header th {
 }
 
 .wrapper.style3-alt {
-  background-color: #953d75;
+  background-color : #40E0D0; /* turquoise */
 }
 
 .wrapper.fullscreen {
@@ -3580,7 +3580,7 @@ body.is-preload .wrapper.fade > .inner {
 }
 
 .wrapper.style3-alt {
-  background-color: #953d75;
+  background-color : #40E0D0; /* turquoise */
 }
 
 .wrapper.fullscreen {
@@ -4710,3 +4710,37 @@ body.menu-open {
   border: 1px solid red;
 }
 
+/*========Glitter Effect===========*/
+
+.glitter-container {
+    position: fixed;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.glitter {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 215, 0, 0.8); /* warna gold */
+    box-shadow: 0 0 8px 2px rgba(255, 215, 0, 0.9); /* efek kilau emas */
+    border-radius: 50%;
+    animation: glitterFall 2s linear forwards;
+}
+
+@keyframes glitterFall {
+    0% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
